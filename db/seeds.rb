@@ -8,4 +8,4 @@
 
 User.create(username: 'Nikola', email: 'nikola@email.com', password: '123')
 
-Note.create(title: 'Clean code', content: 'When you start new project code must be clean!', user_id: 1)
+Note.create(content: 'When you start new project code must be clean!', user_id: 1)
