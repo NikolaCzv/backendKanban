@@ -12,7 +12,7 @@ class Api::V1::NotesController < ApplicationController
     end
 
     def create
-        note = Note.create(content: params[:content], user_id: params[:user_id])
+        note = Note.create(content: params[:content], user_id: params[:user_id], position: params[:position])
 
         render json: note
     end
