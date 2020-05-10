@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :notes
+      resources :notes, only: [:index, :show, :create, :edit, :update, :destroy]
       resources :users, only: [:create, :index, :show, :destroy]
       post '/login', to: 'users#login'
       get '/current_user', to: 'users#show'
