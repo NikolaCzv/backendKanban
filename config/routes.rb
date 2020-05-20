@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  root 'welcome#index'
   namespace :api do
     namespace :v1 do
       resources :notes, only: [:index, :show, :create, :edit, :update, :destroy]
